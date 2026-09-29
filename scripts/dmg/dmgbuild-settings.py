@@ -8,7 +8,8 @@ app_name = os.path.basename(app)
 
 files = [app]
 symlinks = {"Applications": "/Applications"}
-hide_extensions = [app_name]
+# No hide_extensions: it sets a FinderInfo attribute on the app bundle, which fails the strict code
+# signature check Gatekeeper makes (Finder hides ".app" anyway).
 
 background = defines.get("background", "builtin-arrow")  # noqa: F821
 window_rect = ((200, 120), (600, 380))

@@ -165,10 +165,11 @@ jobs:
           bash scripts/ci-symbol-names.sh > logs/symbol-candidates.txt
           swift scripts/check-symbols.swift logs/symbol-candidates.txt > logs/symbols-missing-macos15.txt 2>&1 || true
 
-      - name: Fail if the app crashed or quit
+      - name: Fail if the app crashed, quit or has an invalid signature
         run: |
           if grep -q "NOT RUNNING" logs/running-after-*.txt; then exit 1; fi
           if [ -n "$(ls logs/crashes)" ]; then exit 1; fi
+          codesign --verify --deep --strict --verbose=2 /Applications/Compositor.app
 
       - name: Publish logs
         if: always()
@@ -253,10 +254,7 @@ jobs:
 
           Собрано из коммита $GITHUB_SHA.
           EOF
-          if gh release view "$TAG" -R "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
-            gh release upload "$TAG" "$DMG" --clobber -R "$GITHUB_REPOSITORY"
-            gh release edit "$TAG" --notes-file notes.md -R "$GITHUB_REPOSITORY"
-          else
-            gh release create "$TAG" "$DMG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
-              --title "Compositor $VERSION для macOS 15" --notes-file notes.md --latest
-          fi
+          # A rebuild of the same version replaces the release, so its tag follows the newest commit.
+          gh release delete "$TAG" --cleanup-tag -y -R "$GITHUB_REPOSITORY" > /dev/null 2>&1 || true
+          gh release create "$TAG" "$DMG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "Compositor $VERSION для macOS 15" --notes-file notes.md --latest
