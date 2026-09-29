@@ -1,7 +1,7 @@
 total 2504
-drwxr-xr-x  6 runner  staff      272 Sep 29 20:06 .
-drwxrwxrwt  5 root    wheel      160 Sep 29 20:07 ..
--rw-r--r--  1 runner  staff  1255450 Sep 29 20:06 .background.tiff
--rw-r--r--  1 runner  staff    16388 Sep 29 20:06 .DS_Store
-lrwxr-xr-x  1 runner  staff       13 Sep 29 20:06 Applications -> /Applications
-drwxr-xr-x@ 3 runner  staff      102 Sep 29 20:06 Compositor.app
+drwxr-xr-x  6 runner  staff      272 Sep 29 20:14 .
+drwxrwxrwt  5 root    wheel      160 Sep 29 20:15 ..
+-rw-r--r--  1 runner  staff  1255450 Sep 29 20:14 .background.tiff
+-rw-r--r--  1 runner  staff    16388 Sep 29 20:14 .DS_Store
+lrwxr-xr-x  1 runner  staff       13 Sep 29 20:14 Applications -> /Applications
+drwxr-xr-x  3 runner  staff      102 Sep 29 20:14 Compositor.app

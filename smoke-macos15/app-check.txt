@@ -9,14 +9,14 @@ Load command 12
      tool LD
   version 1267.0
 --prepared:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/.
---prepared:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
---validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
 --prepared:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Autoupdate
 --validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Autoupdate
+--prepared:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
+--validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
 --prepared:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
---validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
 --prepared:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Installer.xpc
+--validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
 --validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Installer.xpc
 --validated:/Applications/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/.
-/Applications/Compositor.app: resource fork, Finder information, or similar detritus not allowed
-file with invalid attached data: Disallowed xattr com.apple.FinderInfo found on /Applications/Compositor.app
+/Applications/Compositor.app: valid on disk
+/Applications/Compositor.app: satisfies its Designated Requirement
