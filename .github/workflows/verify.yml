@@ -1,8 +1,8 @@
 name: Verify
 
+# In this fork the macOS 15 build (build-macos15.yml) is what runs on push; this one is run by hand.
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: verify-${{ github.workflow }}-${{ github.ref }}

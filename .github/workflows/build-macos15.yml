@@ -1,0 +1,260 @@
+name: Build DMG for macOS 15
+
+# Builds Compositor with the macOS 26 SDK for a macOS 15.0 deployment target, packages an ad-hoc
+# signed DMG, checks that it launches on a macOS 15 runner and publishes it as a release.
+# Each job also copies its logs to the build-logs branch.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: build-dmg-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  actions: read
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  build:
+    name: build
+    runs-on: macos-26
+    timeout-minutes: 60
+    outputs:
+      version: ${{ steps.package.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Select Xcode
+        run: |
+          XC=/Applications/Xcode_26.6.app
+          [ -d "$XC" ] || XC=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)
+          sudo xcode-select -s "$XC"
+          mkdir -p logs
+          { sw_vers; xcodebuild -version; ls -d /Applications/Xcode*.app; } | tee logs/environment.txt
+
+      - name: Build Release (arm64, ad-hoc signed)
+        run: |
+          xcodebuild -resolvePackageDependencies -project Compositor.xcodeproj -scheme Compositor \
+            -onlyUsePackageVersionsFromResolvedFile > logs/resolve.log 2>&1 || { cat logs/resolve.log; exit 1; }
+          xcodebuild build \
+            -project Compositor.xcodeproj -scheme Compositor -configuration Release \
+            -destination 'generic/platform=macOS' -derivedDataPath DerivedData \
+            ARCHS=arm64 ONLY_ACTIVE_ARCH=NO \
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= PROVISIONING_PROFILE_SPECIFIER= \
+            ENABLE_HARDENED_RUNTIME=NO \
+            > logs/build-full.log 2>&1 && status=0 || status=$?
+          grep -E "error:" logs/build-full.log | sort -u > logs/build-errors.txt || true
+          grep -E "warning:" logs/build-full.log | sort -u > logs/build-warnings.txt || true
+          tail -300 logs/build-full.log > logs/build-tail.txt
+          cat logs/build-errors.txt
+          tail -5 logs/build-full.log
+          exit $status
+
+      - name: Check the app and package the DMG
+        id: package
+        run: |
+          set -euo pipefail
+          APP=DerivedData/Build/Products/Release/Compositor.app
+          BIN="$APP/Contents/MacOS/Compositor"
+          VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "$APP/Contents/Info.plist")
+          BUILD=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "$APP/Contents/Info.plist")
+          {
+            echo "version $VERSION ($BUILD)"
+            echo "LSMinimumSystemVersion $(/usr/libexec/PlistBuddy -c 'Print LSMinimumSystemVersion' "$APP/Contents/Info.plist")"
+            vtool -show-build "$BIN"
+            lipo -info "$BIN"
+            otool -L "$BIN"
+            codesign -dvvv --entitlements - "$APP" 2>&1
+            codesign --verify --deep --strict --verbose=2 "$APP" 2>&1
+          } | tee logs/app-info.txt
+
+          # The DMG window background, as a TIFF holding both sizes (as scripts/release.sh makes it).
+          sips -s format png -s dpiWidth 72 -s dpiHeight 72 scripts/dmg/dmg-bg.jpg --out "$RUNNER_TEMP/background.png" >/dev/null
+          sips -s format png -s dpiWidth 144 -s dpiHeight 144 scripts/dmg/dmg-bg-retina.jpg --out "$RUNNER_TEMP/background@2x.png" >/dev/null
+          tiffutil -cathidpicheck "$RUNNER_TEMP/background.png" "$RUNNER_TEMP/background@2x.png" -out "$RUNNER_TEMP/background.tiff" >/dev/null
+
+          DMG="Compositor-$VERSION-macOS15.dmg"
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q dmgbuild > logs/dmgbuild.txt 2>&1 || true
+          if ! "$RUNNER_TEMP/venv/bin/dmgbuild" -s scripts/dmg/dmgbuild-settings.py \
+                -D app="$APP" -D background="$RUNNER_TEMP/background.tiff" Compositor "$DMG" >> logs/dmgbuild.txt 2>&1; then
+            echo "dmgbuild failed; making a plain DMG instead" | tee -a logs/dmgbuild.txt
+            STAGE="$RUNNER_TEMP/dmg"
+            rm -rf "$STAGE" && mkdir -p "$STAGE"
+            ditto "$APP" "$STAGE/Compositor.app"
+            ln -s /Applications "$STAGE/Applications"
+            hdiutil create -volname Compositor -srcfolder "$STAGE" -ov -format UDZO "$DMG"
+          fi
+          hdiutil verify "$DMG" >> logs/dmgbuild.txt 2>&1
+          ls -la "$DMG" | tee -a logs/app-info.txt
+          shasum -a 256 "$DMG" | tee logs/dmg-sha256.txt
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: SF Symbols the app names that macOS 26 lacks
+        if: always()
+        run: |
+          bash scripts/ci-symbol-names.sh > logs/symbol-candidates.txt
+          swift scripts/check-symbols.swift logs/symbol-candidates.txt > logs/symbols-missing-macos26.txt 2>&1 || true
+
+      - name: Upload the DMG
+        uses: actions/upload-artifact@v7
+        with:
+          name: Compositor-dmg
+          path: Compositor-*-macOS15.dmg
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish logs
+        if: always()
+        run: |
+          [ -f logs/build-full.log ] && gzip -f logs/build-full.log
+          bash scripts/ci-publish-logs.sh build logs
+
+  smoke:
+    name: launch on macOS 15
+    needs: build
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Install from the DMG
+        run: |
+          set -euo pipefail
+          mkdir -p logs
+          sw_vers | tee logs/environment.txt
+          gh run download "$GITHUB_RUN_ID" -R "$GITHUB_REPOSITORY" -n Compositor-dmg -D dmg
+          DMG=$(ls dmg/*.dmg | head -1)
+          hdiutil attach -nobrowse -readonly -mountpoint /tmp/compositor-dmg "$DMG" | tee -a logs/environment.txt
+          ls -la /tmp/compositor-dmg | tee logs/dmg-contents.txt
+          ditto /tmp/compositor-dmg/Compositor.app /Applications/Compositor.app
+          hdiutil detach /tmp/compositor-dmg
+          { vtool -show-build /Applications/Compositor.app/Contents/MacOS/Compositor
+            codesign --verify --deep --strict --verbose=2 /Applications/Compositor.app; } > logs/app-check.txt 2>&1 || true
+          cat logs/app-check.txt
+
+      - name: Launch, then open an image
+        run: |
+          open /Applications/Compositor.app
+          sleep 25
+          pgrep -lx Compositor > logs/running-after-launch.txt || echo "NOT RUNNING after launch" > logs/running-after-launch.txt
+          screencapture -x logs/1-launch.png || true
+          cp Compositor/Assets.xcassets/AppIcon.appiconset/app-icon-1024.png "$RUNNER_TEMP/sample.png"
+          open -a /Applications/Compositor.app "$RUNNER_TEMP/sample.png"
+          sleep 20
+          screencapture -x logs/2-image-open.png || true
+          pgrep -lx Compositor > logs/running-after-open.txt || echo "NOT RUNNING after opening an image" > logs/running-after-open.txt
+          cat logs/running-after-*.txt
+
+      - name: Collect diagnostics
+        if: always()
+        run: |
+          mkdir -p logs/crashes
+          log show --last 5m --style compact --predicate 'process == "Compositor"' > logs/unified-log.txt 2>&1 || true
+          find ~/Library/Logs/DiagnosticReports /Library/Logs/DiagnosticReports -iname '*Compositor*' -exec cp {} logs/crashes/ \; 2>/dev/null || true
+          ls logs/crashes | tee logs/crash-list.txt
+          bash scripts/ci-symbol-names.sh > logs/symbol-candidates.txt
+          swift scripts/check-symbols.swift logs/symbol-candidates.txt > logs/symbols-missing-macos15.txt 2>&1 || true
+
+      - name: Fail if the app crashed or quit
+        run: |
+          if grep -q "NOT RUNNING" logs/running-after-*.txt; then exit 1; fi
+          if [ -n "$(ls logs/crashes)" ]; then exit 1; fi
+
+      - name: Publish logs
+        if: always()
+        run: bash scripts/ci-publish-logs.sh smoke-macos15 logs
+
+  tests:
+    name: unit tests on macOS 15
+    runs-on: macos-15
+    timeout-minutes: 90
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Select Xcode 26
+        id: xcode
+        run: |
+          mkdir -p logs
+          ls -d /Applications/Xcode*.app | tee logs/xcodes.txt
+          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XC" ]; then echo "no Xcode 26 on this runner" | tee logs/skipped.txt; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          sudo xcode-select -s "$XC"
+          { sw_vers; xcodebuild -version; } | tee logs/environment.txt
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+
+      - name: Build for testing
+        if: steps.xcode.outputs.ok == 'true'
+        run: |
+          xcodebuild build-for-testing -project Compositor.xcodeproj -scheme Compositor \
+            -destination 'platform=macOS,arch=arm64' -configuration Debug -derivedDataPath DerivedData \
+            CODE_SIGN_IDENTITY=- > logs/build-for-testing.log 2>&1 && status=0 || status=$?
+          grep -E "error:" logs/build-for-testing.log | sort -u > logs/test-build-errors.txt || true
+          tail -150 logs/build-for-testing.log > logs/test-build-tail.txt
+          gzip -f logs/build-for-testing.log
+          cat logs/test-build-errors.txt
+          exit $status
+
+      - name: Run unit tests
+        if: steps.xcode.outputs.ok == 'true'
+        run: |
+          xcodebuild test-without-building -project Compositor.xcodeproj -scheme Compositor \
+            -destination 'platform=macOS,arch=arm64' -derivedDataPath DerivedData \
+            -parallel-testing-enabled YES \
+            -skip-testing:CompositorTests/FloatingPanelTests -skip-testing:CompositorTests/SliderSnapTests \
+            > logs/tests-parallel.log 2>&1 && parallel=0 || parallel=$?
+          xcodebuild test-without-building -project Compositor.xcodeproj -scheme Compositor \
+            -destination 'platform=macOS,arch=arm64' -derivedDataPath DerivedData \
+            -parallel-testing-enabled NO \
+            -only-testing:CompositorTests/FloatingPanelTests -only-testing:CompositorTests/SliderSnapTests \
+            > logs/tests-serial.log 2>&1 && serial=0 || serial=$?
+          grep -hE "failed|error:|Executed [0-9]+ test|Test run with|passed after|TEST (SUCCEEDED|FAILED)" logs/tests-*.log | sort -u > logs/test-summary.txt || true
+          tail -80 logs/tests-parallel.log > logs/tests-parallel-tail.txt
+          tail -80 logs/tests-serial.log > logs/tests-serial-tail.txt
+          gzip -f logs/tests-*.log
+          echo "parallel exit $parallel, serial exit $serial" | tee -a logs/test-summary.txt
+          [ $parallel -eq 0 ] && [ $serial -eq 0 ]
+
+      - name: Publish logs
+        if: always()
+        run: bash scripts/ci-publish-logs.sh tests-macos15 logs
+
+  release:
+    name: publish release
+    needs: [build, smoke]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the DMG
+        run: gh run download "$GITHUB_RUN_ID" -R "$GITHUB_REPOSITORY" -n Compositor-dmg -D dmg
+
+      - name: Create or update the release
+        env:
+          VERSION: ${{ needs.build.outputs.version }}
+        run: |
+          TAG="v$VERSION-macos15"
+          DMG=$(ls dmg/*.dmg | head -1)
+          cat > notes.md <<EOF
+          Compositor $VERSION, собранный для macOS 15 Sequoia (Apple silicon). Все функции оригинала сохранены.
+
+          Сборка не подписана Apple Developer ID, поэтому при первом запуске macOS спросит разрешение:
+          откройте Compositor, затем «Системные настройки» → «Конфиденциальность и безопасность» → «Всё равно открыть».
+
+          Собрано из коммита $GITHUB_SHA.
+          EOF
+          if gh release view "$TAG" -R "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            gh release upload "$TAG" "$DMG" --clobber -R "$GITHUB_REPOSITORY"
+            gh release edit "$TAG" --notes-file notes.md -R "$GITHUB_REPOSITORY"
+          else
+            gh release create "$TAG" "$DMG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+              --title "Compositor $VERSION для macOS 15" --notes-file notes.md --latest
+          fi

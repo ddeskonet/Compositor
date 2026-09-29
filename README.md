@@ -79,7 +79,7 @@ brew install --cask robbietilton-compositor
 
 ## Requirements
 
-- macOS 26.0 or later on a Mac with Apple silicon
+- macOS 15.0 or later on a Mac with Apple silicon (this fork; upstream needs macOS 26). The **Build DMG for macOS 15** workflow builds it and publishes the DMG under Releases.
 - Xcode 26 or later (to build from source)
 
 ## Building
