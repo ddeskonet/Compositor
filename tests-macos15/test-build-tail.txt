@@ -1,0 +1,150 @@
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+/Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift:20:16: error: 'borderShape' is only available in macOS 26.0 or newer
+        button.borderShape = .capsule
+               ^
+/Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift:20:16: note: add 'if #available' version check
+        button.borderShape = .capsule
+               ^
+/Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift:7:10: note: add '@available' attribute to enclosing instance method
+    func makeNSView(context: Context) -> NSPopUpButton {
+         ^
+/Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift:4:8: note: add '@available' attribute to enclosing struct
+struct BlendModePicker: NSViewRepresentable {
+       ^
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/UI/BrushControls.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftMergeGeneratedHeaders /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/DerivedSources/Compositor-Swift.h /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor-Swift.h (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor-Swift.h -o /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/DerivedSources/Compositor-Swift.h
+
+SwiftDriverJobDiscovery normal arm64 Compiling AdjustmentEditing.swift, BlurTool.swift, BrushStroke.swift, CameraRaw.swift, CameraRawColor.swift, CameraRawDetailOptics.swift, CameraRawGeometryCalibration.swift, CanvasSize.swift, CloneStamp.swift, ColorPalette.swift, ColorRangeSelection.swift, ContentFill.swift, Crop.swift, Curves.swift, Distort.swift, Dither.swift, DocumentHistory.swift, DocumentLimits.swift, EditorSession.swift, EditorSession+Brush.swift, EditorSession+Projects.swift, Filters.swift, FloatingSelection.swift, Gradient.swift (in target 'Compositor' from project 'Compositor')
+
+Copy /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/arm64-apple-macos.swiftmodule /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.swiftmodule (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.swiftmodule /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/arm64-apple-macos.swiftdoc /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.swiftdoc (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.swiftdoc /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/arm64-apple-macos.abi.json /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.abi.json (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.abi.json /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.swiftsourceinfo (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/Compositor/Compositor/DerivedData/Build/Intermediates.noindex/Compositor.build/Debug/Compositor.build/Objects-normal/arm64/Compositor.swiftsourceinfo /Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Debug/Compositor.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ SelectionEdits.swift,\ ShapeTool.swift,\ SmudgeLiquify.swift,\ SubjectRemoval.swift,\ ToolDefaults.swift,\ TypeTool.swift,\ PSDChannelCoder.swift,\ PSDDocumentBuilder.swift,\ PSDReader.swift,\ PSDText.swift,\ PSDTypes.swift,\ PSDVector.swift,\ CanvasResizer.swift,\ CompositorApplicationDelegate.swift,\ ImageExporter.swift,\ ImageFileDrop.swift,\ ImageImporter.swift,\ ImageResizer.swift,\ ProjectController.swift,\ ProjectController+ExternalChanges.swift,\ ProjectDigest.swift,\ ProjectStore.swift,\ ProjectWatcher.swift,\ RawImporter.swift /Users/runner/work/Compositor/Compositor/Compositor/Document/SelectionEdits.swift /Users/runner/work/Compositor/Compositor/Compositor/Document/ShapeTool.swift /Users/runner/work/Compositor/Compositor/Compositor/Document/SmudgeLiquify.swift /Users/runner/work/Compositor/Compositor/Compositor/Document/SubjectRemoval.swift /Users/runner/work/Compositor/Compositor/Compositor/Document/ToolDefaults.swift /Users/runner/work/Compositor/Compositor/Compositor/Document/TypeTool.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDChannelCoder.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDDocumentBuilder.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDReader.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDText.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDTypes.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDVector.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/CanvasResizer.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/CompositorApplicationDelegate.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageExporter.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageFileDrop.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageImporter.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageResizer.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectController.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectController+ExternalChanges.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectDigest.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectStore.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectWatcher.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/RawImporter.swift (in target 'Compositor' from project 'Compositor')
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/Document/SelectionEdits.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/Document/ShapeTool.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/Document/SmudgeLiquify.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/Document/SubjectRemoval.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/Document/ToolDefaults.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/Document/TypeTool.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDChannelCoder.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDDocumentBuilder.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDReader.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDText.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDTypes.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/PSD/PSDVector.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/CanvasResizer.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/CompositorApplicationDelegate.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageExporter.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageFileDrop.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageImporter.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ImageResizer.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectController.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectController+ExternalChanges.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectDigest.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectStore.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/ProjectWatcher.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/IO/RawImporter.swift (in target 'Compositor' from project 'Compositor')
+    cd /Users/runner/work/Compositor/Compositor
+    
+
+note: Disabling hardened runtime with ad-hoc codesigning. (in target 'Compositor' from project 'Compositor')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ RecentProjects.swift,\ AdjustmentSurface.swift,\ BrushCursorOverlay.swift,\ CanvasLinesOverlay.swift,\ CanvasViewport.swift,\ DownsampleCache.swift,\ EditorCanvas.swift,\ EffectsPreviewCache.swift,\ GPUCanvas.swift,\ GPUNoise.swift,\ InlineTextEditor.swift,\ LayerEffectsSurface.swift,\ LayerRenderer.swift,\ LiveMaskRenderer.swift,\ MetalBrushCoverage.swift,\ MetalLayerEffects.swift,\ MetalWarp.swift,\ RasterSnapshot.swift,\ SampleRingOverlay.swift,\ SeparableBlend.swift,\ TiledLayerRenderer.swift,\ TransformOverlay.swift,\ BlendModePicker.swift,\ BrushControls.swift /Users/runner/work/Compositor/Compositor/Compositor/IO/RecentProjects.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/AdjustmentSurface.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/BrushCursorOverlay.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/CanvasLinesOverlay.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/CanvasViewport.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/DownsampleCache.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/EditorCanvas.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/EffectsPreviewCache.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/GPUCanvas.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/GPUNoise.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/InlineTextEditor.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/LayerEffectsSurface.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/LayerRenderer.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/LiveMaskRenderer.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/MetalBrushCoverage.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/MetalLayerEffects.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/MetalWarp.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/RasterSnapshot.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/SampleRingOverlay.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/SeparableBlend.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/TiledLayerRenderer.swift /Users/runner/work/Compositor/Compositor/Compositor/Rendering/TransformOverlay.swift /Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift /Users/runner/work/Compositor/Compositor/Compositor/UI/BrushControls.swift (in target 'Compositor' from project 'Compositor')
+	SwiftCompile normal arm64 /Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift (in target 'Compositor' from project 'Compositor')
+	Building project Compositor for testing with scheme Compositor
+(3 failures)
