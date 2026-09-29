@@ -1,0 +1,367 @@
+Timestamp               Ty Process[PID:TID]
+2026-09-29 20:07:29.989 A  Compositor[2929:2ec0] (libsystem_secinit.dylib) AppSandbox
+2026-09-29 20:07:30.260 A  Compositor[2929:2ec0] (libsystem_info.dylib) Retrieve User by ID
+2026-09-29 20:07:30.260 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x600001410000] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-09-29 20:07:30.260 Df Compositor[2929:2f01] [com.apple.xpc:connection] [0x60000141c000] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.agent
+2026-09-29 20:07:30.262 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x6000014100f0] activating connection: mach=true listener=false peer=false name=com.apple.coreservices.launchservicesd
+2026-09-29 20:07:30.263 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x6000014101e0] activating connection: mach=true listener=false peer=false name=com.apple.pasteboard.1
+2026-09-29 20:07:30.264 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x6000014102d0] activating connection: mach=true listener=false peer=false name=com.apple.distributed_notifications@Uv3
+2026-09-29 20:07:30.267 Df Compositor[2929:2ec0] [com.apple.AppKit:AutomaticTermination] void _NSDisableAutomaticTerminationAndLog(NSString *) No windows open yet
+2026-09-29 20:07:30.267 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141c0f0] activating connection: mach=true listener=false peer=false name=com.apple.analyticsd
+2026-09-29 20:07:30.268 A  Compositor[2929:2ec0] (TCC) TCCAccessRequest() IPC
+2026-09-29 20:07:30.268 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x600001414000] activating connection: mach=true listener=false peer=false name=com.apple.tccd.system
+2026-09-29 20:07:30.269 Df Compositor[2929:2f02] [com.apple.CoreAnalytics:client] Received configuration update from daemon (initial)
+2026-09-29 20:07:30.272 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x600001414000] invalidated after the last release of the connection object
+2026-09-29 20:07:30.273 Df Compositor[2929:2ec0] [com.apple.SkyLight:default] server port 0x00003707, session port 0x00003707
+2026-09-29 20:07:30.281 Df Compositor[2929:2ec0] [com.apple.SkyLight:default] New connection 0x2d503 main
+2026-09-29 20:07:30.286 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] CHECKIN: pid=2929
+2026-09-29 20:07:30.291 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] CHECKEDIN: pid=2929 asn=0x0-0x29029 foreground=1
+2026-09-29 20:07:30.291 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f06c60] activating connection: mach=false listener=true peer=false name=(anonymous)
+2026-09-29 20:07:30.291 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f06c60] Channel could not return listener port.
+2026-09-29 20:07:30.292 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] FRONTLOGGING: version 1
+2026-09-29 20:07:30.292 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] Registered, pid=2929 ASN=0x0,0x29029
+2026-09-29 20:07:30.293 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f06c60] Channel could not return listener port.
+2026-09-29 20:07:30.293 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] BringForward: pid=2929 asn=0x0-0x29029 bringForward=1 foreground=1 uiElement=0 launchedByLS=1 modifiersCount=1 allDisabled=1
+2026-09-29 20:07:30.293 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] BringFrontModifier: pid=2929 asn=0x0-0x29029 Modifier 0 hideAfter=0 hideOthers=0 dontMakeFrontmost=0 mouseDown=0/0 seed=0/0
+2026-09-29 20:07:30.293 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] BringForward: pid=2929 asn=0x0-0x29029
+2026-09-29 20:07:30.293 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] SetFrontProcess: asn=0x0-0x29029 options=0
+2026-09-29 20:07:30.295 Df Compositor[2929:2f02] [com.apple.xpc:connection] [0x151f07190] activating connection: mach=false listener=false peer=true name=com.apple.xpc.anonymous.0x151f06c60.peer[122].0x151f07190
+2026-09-29 20:07:30.308 Df Compositor[2929:2ec0] [com.apple.AppKit:Appearance] Current system appearance, (HLTB: 1), (SLS: 0)
+2026-09-29 20:07:30.315 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) IOServiceOpen failed for class 'AppleNVMeEAN'
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) Could not open EAN service and connect
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) Failed to copy 'aptk' from EAN
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) Failed to copy APTicket properties. Falling back to default policy.
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) Creating default MGSysConfigPolicy
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) CFDictionaryRef copySyscfgDictionary(void) enumeration of <private> failed.
+2026-09-29 20:07:30.316 Df Compositor[2929:2ec0] (libMobileGestalt.dylib) Failed to find key <private>
+2026-09-29 20:07:30.317 Df Compositor[2929:2ec0] [com.apple.AppKit:Appearance] Current system appearance, (HLTB: 1), (SLS: 0)
+2026-09-29 20:07:30.318 Df Compositor[2929:2ec0] [com.apple.AppKit:Appearance] Post-registration system appearance: (HLTB: 1)
+2026-09-29 20:07:30.319 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f0be60] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
+2026-09-29 20:07:30.333 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f06c60] Channel could not return listener port.
+2026-09-29 20:07:30.339 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f06c60] Channel could not return listener port.
+2026-09-29 20:07:30.368 A  Compositor[2929:2ec0] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-09-29 20:07:30.378 A  Compositor[2929:2f03] (SharedFileList) #SFLAPI LSSharedFileListCreate
+2026-09-29 20:07:30.379 Df Compositor[2929:2f02] [com.apple.xpc:connection] [0x151f0f3d0] activating connection: mach=true listener=false peer=false name=com.apple.coreservices.sharedfilelistd.xpc
+2026-09-29 20:07:30.382 A  Compositor[2929:2f03] (SharedFileList) #SFLAPI LSSharedFileListCreate
+2026-09-29 20:07:30.382 A  Compositor[2929:2f03] (SharedFileList) #SFLAPI LSSharedFileListCopySnapshot
+2026-09-29 20:07:30.407 A  Compositor[2929:2f02] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:30.407 Df Compositor[2929:2ec0] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
+2026-09-29 20:07:30.407 Df Compositor[2929:2ec0] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-09-29 20:07:30.407 Df Compositor[2929:2ec0] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-09-29 20:07:30.408 Df Compositor[2929:2ec0] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-09-29 20:07:30.540 Df Compositor[2929:2ec0] [com.apple.AppKit:Appearance] Invalidate NSApp effectiveAppearance
+2026-09-29 20:07:30.562 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From System CFPrefsD
+2026-09-29 20:07:30.564 Df Compositor[2929:2ec0] [com.apple.GenerativeModels:availability] registering darwin observer for name: com.apple.gms.availability.notification
+2026-09-29 20:07:30.564 Df Compositor[2929:2ec0] [com.apple.GenerativeModels:availability] registering darwin observer for name: com.apple.os-eligibility-domain.change.greymatter
+2026-09-29 20:07:30.564 Df Compositor[2929:2ec0] [com.apple.GenerativeModels:availability] registering darwin observer for name: com.apple.language.changed
+2026-09-29 20:07:30.564 Df Compositor[2929:2ec0] [com.apple.WritingTools:Default] isAvailable value changed: featureEnabled = true, isMDMAllowed = true, gmAvailable (current) = false
+2026-09-29 20:07:30.566 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:30.571 Df Compositor[2929:2ec0] [com.apple.AppKit:Appearance] NSApp cache appearance:
+-NSRequiresAquaSystemAppearance: 0
+-appearance: <NSCompositeAppearance: 0x6000019326d0
+ (
+    "<NSDarkAquaAppearance: 0x6000019327f0>",
+    "<NSSystemAppearance: 0x6000019118c0>"
+)>
+-effectiveAppearance: <NSCompositeAppearance: 0x6000019326d0
+ (
+    "<NSDarkAquaAppearance: 0x6000019327f0>",
+    "<NSSystemAppearance: 0x6000019118c0>"
+)>
+2026-09-29 20:07:30.576 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:30.576 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:30.583 A  Compositor[2929:2f0c] (libsystem_containermanager.dylib) container_create_or_lookup_for_current_user
+2026-09-29 20:07:30.583 A  Compositor[2929:2f0c] (libsystem_containermanager.dylib) container_create_or_lookup_for_platform
+2026-09-29 20:07:30.583 Df Compositor[2929:2f0c] [com.apple.containermanager:xpc] Requesting container lookup; personaid = -1, type = NOPERSONA, name = <unknown>, origin [pid = 0, personaid = 0], proximate [pid = 0, personaid = 0], class = 2, identifier = <private>, group_identifier = <private>, create = 0, temp = 0, euid = 501, uid = 501
+2026-09-29 20:07:30.583 A  Compositor[2929:2f0c] (libsystem_containermanager.dylib) container_query_t
+2026-09-29 20:07:30.583 Df Compositor[2929:2f0c] [com.apple.containermanager:query] Query; personaid = -1, type = NOPERSONA, name = <unknown>, origin [pid = 0, personaid = 0], proximate [pid = 0, personaid = 0], euid = 501, uid = 501, class = 2, identifier = [(null)](0), flags = 900000002
+2026-09-29 20:07:30.584 Df Compositor[2929:2f0c] [com.apple.containermanager:unspecified] container_query_get_single_result: success
+2026-09-29 20:07:30.584 A  Compositor[2929:2f0c] (libsystem_containermanager.dylib) container_copy_object
+2026-09-29 20:07:30.584 Df Compositor[2929:2f0c] [com.apple.containermanager:unspecified] container_create_or_lookup_for_platform: success
+2026-09-29 20:07:30.584 A  Compositor[2929:2f0c] (libsystem_info.dylib) Membership API: translate identifier
+2026-09-29 20:07:30.594 Df Compositor[2929:2f0c] [com.apple.xpc:connection] [0x60000141cc30] activating connection: mach=true listener=false peer=false name=com.apple.dock.fullscreen
+2026-09-29 20:07:30.595 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x600001726a00] activating connection: mach=true listener=false peer=false name=com.apple.fonts
+2026-09-29 20:07:30.605 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f84a80] activating connection: mach=true listener=false peer=false name=com.apple.appkit.restoration_storage
+2026-09-29 20:07:30.605 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cb40] activating connection: mach=true listener=false peer=false name=com.apple.coreservices.appleevents
+2026-09-29 20:07:30.606 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151f06c60] Channel could not return listener port.
+2026-09-29 20:07:30.606 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] SignalReady: pid=2929 asn=0x0-0x29029
+2026-09-29 20:07:30.607 Df Compositor[2929:2ec0] [com.apple.processmanager:front-35286506] SIGNAL: pid=2929 asn=0x0x-0x29029
+2026-09-29 20:07:30.608 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From System CFPrefsD
+2026-09-29 20:07:30.616 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x600001410ff0] activating connection: mach=false listener=false peer=false name=com.apple.hiservices-xpcservice
+2026-09-29 20:07:30.649 Df Compositor[2929:2ec0] [com.apple.AppKit:AutomaticTermination] void _NSDisableAutomaticTerminationAndLog(NSString *) Restoring windows
+2026-09-29 20:07:30.649 Df Compositor[2929:2ec0] [com.apple.AppKit:StateRestoration] -[NSApplication _reopenWindowsAsNecessaryIncludingRestorableState:withFullFidelity:completionHandler:] shouldRestoreState=1 hasPersistentStateToRestore=0 shouldStillRestoreStateAfterPrompting=0
+2026-09-29 20:07:30.649 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cf00] activating connection: mach=true listener=false peer=false name=com.apple.window_proxies
+2026-09-29 20:07:30.649 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cf00] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-09-29 20:07:30.683 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x153072510] activating connection: mach=true listener=false peer=false name=com.apple.windowmanager.server
+2026-09-29 20:07:30.715 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:31.334 Df Compositor[2929:2ec0] [com.apple.AppKit:Window] order window front conditionally: 1d related: 0
+2026-09-29 20:07:31.334 Df Compositor[2929:2ec0] [com.apple.AppKit:AutomaticTermination] void _NSEnableAutomaticTerminationAndLog(NSString *) No windows open yet
+2026-09-29 20:07:31.335 Df Compositor[2929:2f03] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
+2026-09-29 20:07:31.335 Df Compositor[2929:2f03] [com.apple.xpc:session] [0x600000ddc230] Session created.
+2026-09-29 20:07:31.335 Df Compositor[2929:2f03] [com.apple.xpc:session] [0x600000ddc230] Session created from connection [0x60000141a0d0]
+2026-09-29 20:07:31.335 Df Compositor[2929:2f03] [com.apple.xpc:connection] [0x60000141a0d0] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
+2026-09-29 20:07:31.335 Df Compositor[2929:2f03] [com.apple.xpc:session] [0x600000ddc230] Session activated
+2026-09-29 20:07:31.374 Df Compositor[2929:2ec0] [com.apple.AppKit:AutomaticTermination] void _NSEnableAutomaticTerminationAndLog(NSString *) Restoring windows
+2026-09-29 20:07:31.390 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151fa43f0] activating connection: mach=true listener=false peer=false name=com.apple.inputanalyticsd
+2026-09-29 20:07:31.393 Df Compositor[2929:2ec0] [com.apple.inputmethodkitClient:Client] +[IMKClient subclass]: chose IMKClient_Modern
+2026-09-29 20:07:31.395 Df Compositor[2929:2ec0] [com.apple.TextInputUI:CursorUI] -[TUINSCursorUIController scheduleUpdateCursorLocation]
+2026-09-29 20:07:31.395 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cff0] activating connection: mach=true listener=false peer=false name=com.apple.pbs.fetch_services
+2026-09-29 20:07:31.396 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cff0] invalidated after the last release of the connection object
+2026-09-29 20:07:31.396 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:31.405 Df Compositor[2929:2ec0] [com.apple.TextInputUI:CursorUI] -[TUINSCursorUIController scheduleUpdateCursorLocation]
+2026-09-29 20:07:31.407 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cff0] activating connection: mach=false listener=false peer=false name=com.apple.ViewBridgeAuxiliary
+2026-09-29 20:07:31.408 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e0e7a0] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-09-29 20:07:31.408 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151e88a00] activating connection: mach=false listener=true peer=false name=(anonymous)
+2026-09-29 20:07:31.408 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151e88a00] Channel could not return listener port.
+2026-09-29 20:07:31.409 Df Compositor[2929:2f0c] [com.apple.xpc:connection] [0x600001419a40] activating connection: mach=false listener=false peer=false name=com.apple.TextInputUI.xpc.CursorUIViewService
+2026-09-29 20:07:31.410 Df Compositor[2929:2ec0] [com.apple.TextInputUI:CursorUI] -[TUINSCursorUIController scheduleUpdateCursorLocation]
+2026-09-29 20:07:31.411 Df Compositor[2929:2f01] [com.apple.xpc:connection] [0x600001419a40] invalidated after the last release of the connection object
+2026-09-29 20:07:31.443 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141cff0] invalidated after the last release of the connection object
+2026-09-29 20:07:31.451 Df Compositor[2929:2ec0] [com.apple.TextInputUI:CursorUI] -[TUINSCursorUIController scheduleUpdateCursorLocation]
+2026-09-29 20:07:31.485 E  Compositor[2929:2ec0] (Metal) unable to find air64_v27 slice or a compatible one in binary archive '<private>' 
+ available slices: <private>
+2026-09-29 20:07:31.486 E  Compositor[2929:2ec0] (libCoreFSCache.dylib) fopen failed for data file: errno = 2 (No such file or directory)
+2026-09-29 20:07:31.486 E  Compositor[2929:2ec0] (libCoreFSCache.dylib) Errors found! Invalidating cache...
+2026-09-29 20:07:31.486 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x600001404a50] activating connection: mach=false listener=false peer=false name=com.apple.MTLCompilerService
+2026-09-29 20:07:31.486 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.611 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.615 E  Compositor[2929:2ec0] (libCoreFSCache.dylib) fopen failed for data file: errno = 2 (No such file or directory)
+2026-09-29 20:07:31.615 E  Compositor[2929:2ec0] (libCoreFSCache.dylib) Errors found! Invalidating cache...
+2026-09-29 20:07:31.615 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.626 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.627 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.633 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.638 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.640 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.647 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.649 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.651 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.655 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.657 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.661 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.663 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.667 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.669 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.687 A  Compositor[2929:2ec0] (Metal) compiling shader
+2026-09-29 20:07:31.729 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x153084e50] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-09-29 20:07:31.731 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141d1d0] activating connection: mach=false listener=false peer=false name=com.apple.ViewBridgeAuxiliary
+2026-09-29 20:07:31.731 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151ef6840] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-09-29 20:07:31.731 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x60000141d1d0] invalidated after the last release of the connection object
+2026-09-29 20:07:31.803 Df Compositor[2929:2ec0] [com.apple.AppKit:Window] order all windows front 191824157166
+2026-09-29 20:07:31.813 A  Compositor[2929:2ec0] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-09-29 20:07:31.831 A  Compositor[2929:2f03] (SharedFileList) #SFLAPI LSSharedFileListCopySnapshot
+2026-09-29 20:07:31.886 Df Compositor[2929:2ec0] [com.apple.TextInputUI:CursorUI] -[TUINSCursorUIController hideTextInputMenuHUD:] {
+}
+2026-09-29 20:07:31.890 Df Compositor[2929:2ec0] [com.apple.AppKit:Window] window <TUINSWindow: 0x151ec0430> windowNumber=1e finishing close
+2026-09-29 20:07:31.890 Df Compositor[2929:2ec0] [com.apple.AppKit:Window] order window: 1e op: 0 relative: 0 related: 0
+2026-09-29 20:07:31.906 Df Compositor[2929:2ec0] [com.apple.TextInputUI:CursorUI] -[TUINSCursorUIController activate:]_block_invoke: Create CursorUIViewService: TUINSRemoteViewController
+2026-09-29 20:07:32.378 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e41cb0] activating connection: mach=true listener=false peer=false name=com.wonderassembly.compositor-spks
+2026-09-29 20:07:32.379 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e41cb0] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-09-29 20:07:32.379 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e41cb0] invalidated after a failed init
+2026-09-29 20:07:32.380 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x15301d570] activating connection: mach=true listener=false peer=false name=com.wonderassembly.compositor-spks
+2026-09-29 20:07:32.380 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x15301d570] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-09-29 20:07:32.380 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x15301d570] invalidated after a failed init
+2026-09-29 20:07:32.381 Df Compositor[2929:2ec0] [com.apple.network:] networkd_settings_read_from_file initialized networkd settings by reading plist directly
+2026-09-29 20:07:32.382 Df Compositor[2929:2ec0] [com.apple.network:] networkd_settings_read_from_file initialized networkd settings by reading plist directly
+2026-09-29 20:07:32.383 Df Compositor[2929:2ec0] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> resuming, timeouts(60.0, 604800.0) qos(0x21) voucher((null)) activity(00000000-0000-0000-0000-000000000000)
+2026-09-29 20:07:32.383 A  Compositor[2929:2ec0] (CoreFoundation) Loading Preferences From User CFPrefsD
+2026-09-29 20:07:32.384 Df Compositor[2929:2f01] [com.apple.AppSSO:SOConfigurationClient] -[SOConfigurationClient init]  on <private>
+2026-09-29 20:07:32.384 Df Compositor[2929:2f01] [com.apple.xpc:connection] [0x131f5c720] activating connection: mach=true listener=false peer=false name=com.apple.AppSSO.service-xpc
+2026-09-29 20:07:32.384 Df Compositor[2929:2f01] [com.apple.AppSSO:SOServiceConnection] <SOServiceConnection: 0x600002b96b40>: new XPC connection
+2026-09-29 20:07:32.386 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Initializing NSHTTPCookieStorage singleton
+2026-09-29 20:07:32.386 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Initializing CFHTTPCookieStorage singleton
+2026-09-29 20:07:32.386 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Creating default cookie storage with default identifier
+2026-09-29 20:07:32.387 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Initializing AlternativeServices Storage singleton
+2026-09-29 20:07:32.387 Df Compositor[2929:2f03] [com.apple.runningboard:connection] Initializing connection
+2026-09-29 20:07:32.387 Df Compositor[2929:2f03] [com.apple.runningboard:process] Removing all cached process handles
+2026-09-29 20:07:32.387 Df Compositor[2929:2f0c] [com.apple.runningboard:connection] Sending handshake request attempt #1 to server
+2026-09-29 20:07:32.387 Df Compositor[2929:2f0c] [com.apple.runningboard:connection] Creating connection to com.apple.runningboard
+2026-09-29 20:07:32.387 Df Compositor[2929:2f0c] [com.apple.xpc:connection] [0x600001404e10] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-09-29 20:07:32.388 Df Compositor[2929:2f01] [com.apple.xpc:connection] [0x600001419950] activating connection: mach=true listener=false peer=false name=com.apple.metadata.mds
+2026-09-29 20:07:32.390 A  Compositor[2929:2f02] (RunningBoardServices) didChangeInheritances
+2026-09-29 20:07:32.390 Df Compositor[2929:2f0c] [com.apple.runningboard:connection] Handshake succeeded
+2026-09-29 20:07:32.390 Df Compositor[2929:2f0c] [com.apple.runningboard:connection] Identity resolved as app<application.com.wonderassembly.compositor.3497680.3497800(501)>
+2026-09-29 20:07:32.402 Df Compositor[2929:3062] [com.apple.CFNetwork:Default] Garbage collection for alternative services
+2026-09-29 20:07:32.402 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Connection 0: creating secure tcp or quic connection
+2026-09-29 20:07:32.403 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Connection 1: enabling TLS
+2026-09-29 20:07:32.403 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Connection 1: starting, TC(0xc8)
+2026-09-29 20:07:32.403 Df Compositor[2929:2f03] [com.apple.network:connection] [C1 21E3DCD1-EC54-41B1-A969-BA195BB65726 Hostname#867f1db5:443 quic-connection, url hash: 904c76bb, definite, attribution: developer, context: com.apple.CFNetwork.NSURLSession.{84001C88-28B8-4676-BF5F-76BCE171E89A}{(null)}{Y}{2}{0x0} (private), proc: D71CE1B4-403C-3D75-8042-6EC1DC0DC33B, traffic class: 200] start
+2026-09-29 20:07:32.403 Df Compositor[2929:2f03] [com.apple.network:connection] [C1 Hostname#867f1db5:443 initial parent-flow ((null))] event: path:start @0.000s
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1 Hostname#867f1db5:443 waiting parent-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: path:satisfied @0.000s, uuid: A5DA32BD-2868-4F8F-9BD6-388C711616CE
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1 Hostname#867f1db5:443 in_progress parent-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:start_connect @0.001s
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] nw_connection_report_state_with_handler_on_nw_queue [C1] reporting state preparing
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1 Hostname#867f1db5:443 in_progress parent-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:start_child @0.001s
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1.1 Hostname#867f1db5:443 initial path ((null))] event: path:start @0.001s
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1.1 Hostname#867f1db5:443 waiting path (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: path:satisfied @0.001s, uuid: A5DA32BD-2868-4F8F-9BD6-388C711616CE
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1.1 Hostname#867f1db5:443 in_progress transform (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: transform:start @0.001s
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1.1.1 Hostname#867f1db5:443 initial path ((null))] event: path:start @0.001s
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1.1.1 Hostname#867f1db5:443 waiting path (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: path:satisfied @0.001s, uuid: 075137DD-F983-4029-85F0-95FBF8EA2033
+2026-09-29 20:07:32.404 Df Compositor[2929:2f03] [com.apple.network:connection] [C1.1.1 Hostname#867f1db5:443 in_progress resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: resolver:start_dns @0.001s
+2026-09-29 20:07:32.405 Df Compositor[2929:3062] [com.apple.xpc:connection] [0x6000014052c0] activating connection: mach=true listener=false peer=false name=com.apple.dnssd.service
+2026-09-29 20:07:32.405 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> setting up Connection 1
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] nw_endpoint_resolver_update [C1.1.1 Hostname#867f1db5:443 in_progress resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] Adding endpoint handler for IPv4#916c284f:443
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] nw_endpoint_resolver_update [C1.1.1 Hostname#867f1db5:443 in_progress resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] Adding endpoint handler for IPv4#562bddb1:443
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] nw_endpoint_resolver_update [C1.1.1 Hostname#867f1db5:443 in_progress resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] Adding endpoint handler for IPv4#cd99b383:443
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] nw_endpoint_resolver_update [C1.1.1 Hostname#867f1db5:443 in_progress resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] Adding endpoint handler for IPv4#eff866fd:443
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1 Hostname#867f1db5:443 in_progress resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: resolver:receive_dns @0.017s
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 initial path ((null))] event: path:start @0.017s
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 waiting path (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: path:satisfied @0.017s, uuid: 51169629-C52B-45A0-9AF0-9CA4F1793A70
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 in_progress channel-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:start_nexus @0.017s
+2026-09-29 20:07:32.421 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 in_progress channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] event: flow:receive_nexus @0.018s
+2026-09-29 20:07:32.422 Df Compositor[2929:2f01] [com.apple.network:] user_tcp_init_all_block_invoke g_tcp_nw_assert_context is false value -1
+2026-09-29 20:07:32.422 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 in_progress channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] event: flow:start_connect @0.019s
+2026-09-29 20:07:32.422 Df Compositor[2929:2f01] [com.apple.network:tcp] tcp_output [C1.1.1.1:3] flags=[SEC] seq=568916334, ack=0, win=65535 state=SYN_SENT rcv_nxt=0, snd_una=568916334
+2026-09-29 20:07:32.424 Df Compositor[2929:2f01] [com.apple.network:tcp] tcp_input [C1.1.1.1:3] flags=[S.] seq=3302052520, ack=568916335, win=65535 state=SYN_SENT rcv_nxt=0, snd_una=568916334
+2026-09-29 20:07:32.424 Df Compositor[2929:2f01] [com.apple.network:connection] nw_flow_connected [C1.1.1.1 IPv4#916c284f:443 in_progress channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] Transport protocol connected (tcp)
+2026-09-29 20:07:32.424 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 in_progress channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] event: flow:finish_transport @0.021s
+2026-09-29 20:07:32.424 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_session_apply_protocol_options_for_transport_block_invoke(2182) [C1.1.1.1:2][0x131e485c0] TLS configured [min_version(0x0303) max_version(0x0304) name(redacted) tickets(false) false_start(false) enforce_ev(false) enforce_ats(false) ats_non_pfs_ciphersuite_allowed(false) ech(false) pqtls(false), pake(false)]
+2026-09-29 20:07:32.424 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2374) [C1.1.1.1:2][0x131e485c0] Client handshake started
+2026-09-29 20:07:32.424 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS client enter_early_data
+2026-09-29 20:07:32.425 Df Compositor[2929:2f01] [com.apple.network:] nw_mem_region_init process is managed by running board services
+2026-09-29 20:07:32.425 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS client read_server_hello
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_hello_retry_request
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_server_hello
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_encrypted_extensions
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_certificate_request
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_server_certificate
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_server_certificate_verify
+2026-09-29 20:07:32.428 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_evaluate_trust_async(1819) [C1.1.1.1:2][0x131e485c0] Performing external trust evaluation
+2026-09-29 20:07:32.428 A  Compositor[2929:2f01] (Security) SecKeyCopyPublicBytes
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_evaluate_trust_async_external(1804) [C1.1.1.1:2][0x131e485c0] Asyncing for external verify block
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: asked to evaluate TLS Trust
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> auth completion disp=1 cred=0x0
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.securityd:trust] (Trust 0x600001c32050) No pending evals, starting
+2026-09-29 20:07:32.429 A  Compositor[2929:2f01] (Security) SecTrustEvaluateIfNecessaryFastAsync
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.securityd:keychain] Enabling System Keychain Always due to platform
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.xpc:connection] [0x600001419860] activating connection: mach=true listener=false peer=false name=com.apple.trustd.agent
+2026-09-29 20:07:32.429 Df Compositor[2929:2f01] [com.apple.securityd:trust] (Trust 0x600001c32050) Completed async eval kickoff
+2026-09-29 20:07:32.432 Df Compositor[2929:2f03] [com.apple.securityd:trust] (Trust 0x600001c32050) trustd returned 4
+2026-09-29 20:07:32.432 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] System Trust Evaluation yielded status(0)
+2026-09-29 20:07:32.432 Df Compositor[2929:2f03] [com.apple.securityd:trust] (Trust 0x600001c33f40) No pending evals, starting
+2026-09-29 20:07:32.432 A  Compositor[2929:2f03] (Security) SecTrustEvaluateIfNecessaryFastAsync
+2026-09-29 20:07:32.432 Df Compositor[2929:2f03] [com.apple.securityd:trust] (Trust 0x600001c33f40) Completed async eval kickoff
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.securityd:trust] (Trust 0x600001c33f40) trustd returned 4
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: TLS Trust result 0
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_evaluate_trust_async_external_block_invoke_3(1760) [C1.1.1.1:2][0x131e485c0] Returning from external verify block with result: true
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_certificate_verify_callback(2000) [C1.1.1.1:2][0x131e485c0] Certificate verification result: OK
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client read_server_finished
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client send_end_of_early_data
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client send_client_encrypted_extensions
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client send_client_certificate
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client complete_second_flight
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS 1.3 client done
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS client finish_client_handshake
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2391) [C1.1.1.1:2][0x131e485c0] Client handshake state: TLS client done
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] boringssl_context_info_handler(2380) [C1.1.1.1:2][0x131e485c0] Client handshake done
+2026-09-29 20:07:32.434 A  Compositor[2929:2f01] (Security) SecKeyCopyPublicBytes
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:boringssl] nw_protocol_boringssl_signal_connected(755) [C1.1.1.1:2][0x131e485c0] TLS connected [version(0x0304) ciphersuite(TLS_AES_128_GCM_SHA256) group(0x001d) signature_alg(0x0804) alpn(h2) resumed(0) offered_ticket(0) false_started(0) ocsp_received(0) sct_received(0) connect_time(10ms) flight_time(4ms) rtt(4ms) write_stalls(0) read_stalls(6) pake(0x0000)]
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] nw_flow_connected [C1.1.1.1 IPv4#916c284f:443 in_progress channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] Output protocol connected (CFNetworkConnection-173163705)
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 ready channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] event: flow:child_finish_connect @0.031s
+2026-09-29 20:07:32.434 A  Compositor[2929:2f03] (Security) SecTrustReportNetworkingAnalytics
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1 Hostname#867f1db5:443 ready resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:child_finish_connect @0.031s
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1 Hostname#867f1db5:443 ready transform (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:child_finish_connect @0.031s
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1.1 IPv4#916c284f:443 ready channel-flow (satisfied (Path is satisfied), viable, interface: en0, ipv4, dns)] event: flow:changed_viability @0.031s
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1.1 Hostname#867f1db5:443 ready resolver (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:changed_viability @0.031s
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1.1 Hostname#867f1db5:443 ready transform (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:changed_viability @0.031s
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] nw_flow_connected [C1 IPv4#916c284f:443 in_progress parent-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] Output protocol connected (endpoint_flow)
+2026-09-29 20:07:32.434 Df Compositor[2929:2f01] [com.apple.network:connection] [C1 IPv4#916c284f:443 ready parent-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:finish_connect @0.031s
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.network:connection] nw_connection_report_state_with_handler_on_nw_queue [C1] reporting state ready
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.network:connection] [C1 IPv4#916c284f:443 ready parent-flow (satisfied (Path is satisfied), interface: en0, ipv4, dns)] event: flow:changed_viability @0.031s
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.network:connection] nw_connection_send_viability_changed_on_nw_queue [C1] viability_changed_handler(true)
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: connected successfully
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: TLS handshake complete
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: ready C(N) E(N)
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.network:connection] [C1] event: client:connection_reused @0.031s
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> now using Connection 1
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: received viability advisory(Y)
+2026-09-29 20:07:32.435 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> sent request, body N 0
+2026-09-29 20:07:32.481 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> received response, status 200 content K
+2026-09-29 20:07:32.481 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> done using Connection 1
+2026-09-29 20:07:32.481 Df Compositor[2929:2f03] [com.apple.network:connection] [C1] event: client:connection_idle @0.078s
+2026-09-29 20:07:32.481 Df Compositor[2929:2f03] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> response ended
+2026-09-29 20:07:32.500 A  Compositor[2929:2f01] (libsystem_info.dylib) Retrieve Group by ID
+2026-09-29 20:07:32.502 Df Compositor[2929:2f01] [com.apple.CFNetwork:Summary] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> summary for task success {transaction_duration_ms=115, response_status=200, connection=1, protocol="h2", domain_lookup_duration_ms=16, connect_duration_ms=12, secure_connection_duration_ms=10, private_relay=false, request_start_ms=49, request_duration_ms=0, response_start_ms=95, response_duration_ms=0, request_bytes=139, request_throughput_kbps=1331, response_bytes=1050, response_throughput_kbps=2636, cache_hit=false}
+2026-09-29 20:07:32.502 Df Compositor[2929:2ec0] [com.apple.CFNetwork:Default] Task <5E5EA0E6-9201-4ED8-A19C-BA48E52CDE57>.<1> finished successfully
+2026-09-29 20:07:32.502 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: cleaning up
+2026-09-29 20:07:32.503 Df Compositor[2929:2f01] [com.apple.network:connection] [C1 21E3DCD1-EC54-41B1-A969-BA195BB65726 Hostname#867f1db5:443 quic-connection, url hash: 904c76bb, traffic class: 200, definite, attribution: developer] cancel
+2026-09-29 20:07:32.507 Df Compositor[2929:2f01] [com.apple.network:connection] [C1 21E3DCD1-EC54-41B1-A969-BA195BB65726 Hostname#867f1db5:443 quic-connection, url hash: 904c76bb, traffic class: 200, definite, attribution: developer] cancelled
+	[C1.1.1.1 51169629-C52B-45A0-9AF0-9CA4F1793A70 192.168.64.17:62161<->IPv4#916c284f:443]
+	Connected Path: satisfied (Path is satisfied), viable, interface: en0, ipv4, dns
+	Privacy Stance: Not Eligible
+	Duration: 0.103s, DNS @0.001s took 0.016s, TCP @0.019s took 0.002s, TLS 1.3 took 0.010s
+	bytes in/out: 6050/876, packets in/out: 8/11, rtt: 0.002s, retransmitted bytes: 0, out-of-order bytes: 0
+	ecn packets sent/acked/marked/lost: 0/0/0/0
+2026-09-29 20:07:32.507 Df Compositor[2929:2f01] [com.apple.network:tcp] nw_protocol_tcp_log_summary [C1.1.1.1:3] 
+	[A334FDC9-4453-411B-B495-21D882969D64 <private>:62161<-><private>:443]
+	Init: 1, Conn_Time: 1.910ms, SYNs: 1, WR_T: 0/0, RD_T: 0/0, TFO: 0/0/0, ECN: 0/1/1, Accurate ECN (client/server): Disabled/Disabled, TS: 1, TSO: 0
+	rtt_cache: none, rtt_upd: 5, rtt: 2.437ms, rtt_var: 1.187ms rtt_nc: 2.437ms, rtt_var_nc: 1.187ms base rtt: 1ms
+	ACKs-compressed: 0, ACKs delayed: 0 delayed ACKs sent: 0
+2026-09-29 20:07:32.507 Df Compositor[2929:2f01] [com.apple.network:connection] nw_flow_disconnected [C1 IPv4#916c284f:443 cancelled parent-flow ((null))] Output protocol disconnected
+2026-09-29 20:07:32.507 Df Compositor[2929:2f01] [com.apple.network:connection] nw_connection_report_state_with_handler_on_nw_queue [C1] reporting state cancelled
+2026-09-29 20:07:32.507 Df Compositor[2929:2f01] [com.apple.CFNetwork:Default] Connection 1: done
+2026-09-29 20:07:32.507 Df Compositor[2929:2f01] [com.apple.network:tcp] tcp_output [C1.1.1.1:3] flags=[F.] seq=568917235, ack=3302058571, win=2048 state=FIN_WAIT_1 rcv_nxt=3302058571, snd_una=568917172
+2026-09-29 20:07:32.512 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e48250] activating connection: mach=true listener=false peer=false name=com.wonderassembly.compositor-spks
+2026-09-29 20:07:32.512 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e48250] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-09-29 20:07:32.512 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x131e48250] invalidated after a failed init
+2026-09-29 20:07:35.595 Df Compositor[2929:2ec0] [com.apple.AppKit:AutomaticTermination] void _updateToReflectAutomaticTerminationState(void) Setting _kLSApplicationWouldBeTerminatedByTALKey=0
+2026-09-29 20:07:40.619 Df Compositor[2929:2f03] [com.apple.launchservices:db] NotifyToken::RegisterDispatch(user.uid.501.com.apple.LaunchServices.database) fired for session key <private>
+2026-09-29 20:07:40.980 Df Compositor[2929:2f03] [com.apple.launchservices:default] LSExceptions shared instance invalidated for timeout.
+2026-09-29 20:07:42.430 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151fbb460] activating connection: mach=true listener=false peer=false name=mul-xpc (Apple)_OpenStep
+2026-09-29 20:07:42.431 Df Compositor[2929:2ec0] [com.apple.xpc:connection] [0x151fdff00] activating connection: mach=true listener=false peer=false name=com.apple.naturallanguaged
+2026-09-29 20:07:55.677 A  Compositor[2929:2ec0] (CoreServicesInternal) CFURLResolveBookmarkData
+2026-09-29 20:07:55.938 A  Compositor[2929:2f03] (Metal) compiling shader
+2026-09-29 20:07:55.954 A  Compositor[2929:2f03] (Metal) compiling shader
+2026-09-29 20:07:56.000 A  Compositor[2929:35da] (Metal) compiling shader
+2026-09-29 20:07:56.001 Df Compositor[2929:2f03] [com.apple.xpc:connection] [0x600001419680] activating connection: mach=false listener=false peer=false name=com.apple.MTLCompilerService
+2026-09-29 20:07:56.001 A  Compositor[2929:2f03] (Metal) compiling shader
+2026-09-29 20:07:56.014 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.019 A  Compositor[2929:35da] (Metal) compiling shader
+2026-09-29 20:07:56.021 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.056 A  Compositor[2929:2f03] (Metal) compiling shader
+2026-09-29 20:07:56.300 A  Compositor[2929:35de] (Metal) compiling shader
+2026-09-29 20:07:56.300 A  Compositor[2929:2f0c] (Metal) compiling shader
+2026-09-29 20:07:56.310 A  Compositor[2929:35de] (Metal) compiling shader
+2026-09-29 20:07:56.310 A  Compositor[2929:2f0c] (Metal) compiling shader
+2026-09-29 20:07:56.340 A  Compositor[2929:2f0c] (Metal) compiling shader
+2026-09-29 20:07:56.341 A  Compositor[2929:35de] (Metal) compiling shader
+2026-09-29 20:07:56.346 A  Compositor[2929:2f0c] (Metal) compiling shader
+2026-09-29 20:07:56.360 A  Compositor[2929:35de] (Metal) compiling shader
+2026-09-29 20:07:56.374 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.378 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.389 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.392 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.401 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.404 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.415 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.418 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.427 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.432 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.441 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.443 A  Compositor[2929:35e1] (Metal) compiling shader
+2026-09-29 20:07:56.470 Df Compositor[2929:35dd] [com.apple.coreanimation:Metal] Precompiled pipelines disabled on unsupported hardware.
+2026-09-29 20:07:56.471 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.481 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.483 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.484 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.487 A  Compositor[2929:2f02] (Metal) compiling shader
+2026-09-29 20:07:56.487 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.490 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.494 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.495 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.497 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.498 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.499 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.511 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.514 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.526 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.530 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.532 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.535 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.545 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.547 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.549 A  Compositor[2929:35dd] (Metal) compiling shader
+2026-09-29 20:07:56.590 A  Compositor[2929:2f02] (Metal) compiling shader
+2026-09-29 20:07:56.595 A  Compositor[2929:2f02] (Metal) compiling shader
+2026-09-29 20:07:56.627 A  Compositor[2929:2f02] (Metal) compiling shader
+2026-09-29 20:08:06.348 Df Compositor[2929:35dd] [com.apple.launchservices:db] NotifyToken::RegisterDispatch(user.uid.501.com.apple.LaunchServices.database) fired for session key <private>
