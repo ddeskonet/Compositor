@@ -7,26 +7,26 @@ Resolve Package Graph
 Resolved source packages:
   Sparkle: https://github.com/sparkle-project/Sparkle @ 2.10.0
 
-2026-09-29 20:05:14.410111+0000 Compositor[17809:52793] [logging-persist] cannot open file at line 49455 of [1b37c146ee]
-2026-09-29 20:05:14.410136+0000 Compositor[17809:52793] [logging-persist] os_unix.c:49455: (2) open(/private/var/db/DetachedSignatures) - No such file or directory
-2026-09-29 20:05:14.647087+0000 Compositor[17809:52726] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /Users/runner/Library/Containers/com.wonderassembly.compositor/Data/tmp/com.wonderassembly.compositor.savedState
-2026-09-29 20:05:15.808390+0000 Compositor[17809:52726] unable to find air64_v27 slice or a compatible one in binary archive 'file:///System/Library/PrivateFrameworks/RenderBox.framework/Resources/archive.metallib' 
+2026-09-29 20:09:29.927015+0000 Compositor[12859:39483] [logging-persist] cannot open file at line 49455 of [1b37c146ee]
+2026-09-29 20:09:29.927038+0000 Compositor[12859:39483] [logging-persist] os_unix.c:49455: (2) open(/private/var/db/DetachedSignatures) - No such file or directory
+2026-09-29 20:09:30.114777+0000 Compositor[12859:39453] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /Users/runner/Library/Containers/com.wonderassembly.compositor/Data/tmp/com.wonderassembly.compositor.savedState
+2026-09-29 20:09:31.063365+0000 Compositor[12859:39453] unable to find air64_v27 slice or a compatible one in binary archive 'file:///System/Library/PrivateFrameworks/RenderBox.framework/Resources/archive.metallib' 
  available slices: applegpu_g15d, applegpu_g15g, applegpu_g16s, applegpu_g13g, applegpu_g14g, applegpu_g16g, applegpu_g15s, applegpu_g14s, applegpu_g16s, applegpu_g14d, applegpu_g13s, applegpu_g13d,
-Test Suite 'Selected tests' started at 2026-09-29 20:05:16.360.
-Test Suite 'CompositorTests.xctest' started at 2026-09-29 20:05:16.361.
-Test Suite 'CompositorTests.xctest' passed at 2026-09-29 20:05:16.361.
+Test Suite 'Selected tests' started at 2026-09-29 20:09:31.603.
+Test Suite 'CompositorTests.xctest' started at 2026-09-29 20:09:31.603.
+Test Suite 'CompositorTests.xctest' passed at 2026-09-29 20:09:31.604.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-09-29 20:09:31.604.
 	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
-Test Suite 'Selected tests' passed at 2026-09-29 20:05:16.362.
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
 ◇ Test run started.
 ↳ Testing Library Version: 1501
 ↳ Target Platform: arm64e-apple-macos14.0
 ◇ Suite FloatingPanelTests started.
 ◇ Test hueSaturationPanelSurvivesALayoutPass() started.
-2026-09-29 20:05:16.664739+0000 Compositor[17809:52726] [CursorUI] ViewBridge to RemoteViewService Terminated: Error Domain=com.apple.ViewBridge Code=18 "(null)" UserInfo={com.apple.ViewBridge.error.hint=this process disconnected remote view controller -- benign unless unexpected, com.apple.ViewBridge.error.description=NSViewBridgeErrorCanceled}
-✔ Test hueSaturationPanelSurvivesALayoutPass() passed after 1.014 seconds.
+2026-09-29 20:09:31.850980+0000 Compositor[12859:39453] [CursorUI] ViewBridge to RemoteViewService Terminated: Error Domain=com.apple.ViewBridge Code=18 "(null)" UserInfo={com.apple.ViewBridge.error.hint=this process disconnected remote view controller -- benign unless unexpected, com.apple.ViewBridge.error.description=NSViewBridgeErrorCanceled}
+✔ Test hueSaturationPanelSurvivesALayoutPass() passed after 1.006 seconds.
 ◇ Test colorPickerPanelSurvivesALayoutPass() started.
-✔ Test colorPickerPanelSurvivesALayoutPass() passed after 0.610 seconds.
+✔ Test colorPickerPanelSurvivesALayoutPass() passed after 0.596 seconds.
 ◇ Test adjustmentEditorsUseMovableNonmodalPanels(_:) started.
 ◇ Test case passing 1 argument kind → .hsv to adjustmentEditorsUseMovableNonmodalPanels(_:) started.
 ​◇ Test case passing 1 argument kind → .levels to adjustmentEditorsUseMovableNonmodalPanels(_:) started.
@@ -39,25 +39,25 @@ Test Suite 'Selected tests' passed at 2026-09-29 20:05:16.362.
 ​◇ Test case passing 1 argument kind → .motionBlur to adjustmentEditorsUseMovableNonmodalPanels(_:) started.
 ​◇ Test case passing 1 argument kind → .blackWhite to adjustmentEditorsUseMovableNonmodalPanels(_:) started.
 ​◇ Test case passing 1 argument kind → .colorBalance to adjustmentEditorsUseMovableNonmodalPanels(_:) started.
-​✔ Test adjustmentEditorsUseMovableNonmodalPanels(_:) with 11 test cases passed after 6.240 seconds.
+​✔ Test adjustmentEditorsUseMovableNonmodalPanels(_:) with 11 test cases passed after 5.996 seconds.
 ◇ Test dockedPlacementLeavesTheSavedFilterPosition() started.
-✔ Test dockedPlacementLeavesTheSavedFilterPosition() passed after 1.401 seconds.
+✔ Test dockedPlacementLeavesTheSavedFilterPosition() passed after 1.322 seconds.
 ◇ Test theDockedPanelFitsTheGradingWheels() started.
-✔ Test theDockedPanelFitsTheGradingWheels() passed after 0.036 seconds.
+✔ Test theDockedPanelFitsTheGradingWheels() passed after 0.027 seconds.
 ◇ Test cameraRawDocksToTheDocumentWindow() started.
-✔ Test cameraRawDocksToTheDocumentWindow() passed after 1.313 seconds.
-✔ Suite FloatingPanelTests passed after 10.621 seconds.
+✔ Test cameraRawDocksToTheDocumentWindow() passed after 1.263 seconds.
+✔ Suite FloatingPanelTests passed after 10.215 seconds.
 ◇ Suite SliderSnapTests started.
 ◇ Test clickingTheTrackSnapsBeforeNativeTrackingBegins() started.
-✔ Test clickingTheTrackSnapsBeforeNativeTrackingBegins() passed after 0.121 seconds.
-✔ Suite SliderSnapTests passed after 0.121 seconds.
-✔ Test run with 7 tests in 2 suites passed after 10.744 seconds.
-2026-09-29 20:05:27.662 xcodebuild[17223:51287] [MT] IDETestOperationsObserverDebug: 14.660 elapsed -- Testing started completed.
-2026-09-29 20:05:27.662 xcodebuild[17223:51287] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
-2026-09-29 20:05:27.662 xcodebuild[17223:51287] [MT] IDETestOperationsObserverDebug: 14.660 sec, +14.660 sec -- end
+✔ Test clickingTheTrackSnapsBeforeNativeTrackingBegins() passed after 0.056 seconds.
+✔ Suite SliderSnapTests passed after 0.056 seconds.
+✔ Test run with 7 tests in 2 suites passed after 10.272 seconds.
+2026-09-29 20:09:42.382 xcodebuild[12560:38688] [MT] IDETestOperationsObserverDebug: 14.567 elapsed -- Testing started completed.
+2026-09-29 20:09:42.382 xcodebuild[12560:38688] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-09-29 20:09:42.382 xcodebuild[12560:38688] [MT] IDETestOperationsObserverDebug: 14.567 sec, +14.567 sec -- end
 
 Test session results, code coverage, and logs:
-	/Users/runner/work/Compositor/Compositor/DerivedData/Logs/Test/Test-Compositor-2026.09.29_20-05-12-+0000.xcresult
+	/Users/runner/work/Compositor/Compositor/DerivedData/Logs/Test/Test-Compositor-2026.09.29_20-09-25-+0000.xcresult
 
 ** TEST EXECUTE SUCCEEDED **
 
