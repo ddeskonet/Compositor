@@ -48,7 +48,7 @@ jobs:
             -destination 'generic/platform=macOS' -derivedDataPath DerivedData \
             ARCHS=arm64 ONLY_ACTIVE_ARCH=NO \
             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= PROVISIONING_PROFILE_SPECIFIER= \
-            ENABLE_HARDENED_RUNTIME=NO \
+            ENABLE_HARDENED_RUNTIME=NO OTHER_SWIFT_FLAGS='$(inherited) -continue-building-after-errors' \
             > logs/build-full.log 2>&1 && status=0 || status=$?
           grep -E "error:" logs/build-full.log | sort -u > logs/build-errors.txt || true
           grep -E "warning:" logs/build-full.log | sort -u > logs/build-warnings.txt || true
@@ -198,7 +198,8 @@ jobs:
         run: |
           xcodebuild build-for-testing -project Compositor.xcodeproj -scheme Compositor \
             -destination 'platform=macOS,arch=arm64' -configuration Debug -derivedDataPath DerivedData \
-            CODE_SIGN_IDENTITY=- > logs/build-for-testing.log 2>&1 && status=0 || status=$?
+            CODE_SIGN_IDENTITY=- OTHER_SWIFT_FLAGS='$(inherited) -continue-building-after-errors' \
+            > logs/build-for-testing.log 2>&1 && status=0 || status=$?
           grep -E "error:" logs/build-for-testing.log | sort -u > logs/test-build-errors.txt || true
           tail -150 logs/build-for-testing.log > logs/test-build-tail.txt
           gzip -f logs/build-for-testing.log
