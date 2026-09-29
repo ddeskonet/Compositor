@@ -9,9 +9,10 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Every push gets its own run: a newer push doesn't cancel the tests of an older one.
 concurrency:
-  group: build-dmg-${{ github.ref }}
-  cancel-in-progress: true
+  group: build-dmg-${{ github.sha }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
