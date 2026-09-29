@@ -1,1 +1,0 @@
-/Users/runner/work/Compositor/Compositor/Compositor/UI/BlendModePicker.swift:20:16: error: 'borderShape' is only available in macOS 26.0 or newer
