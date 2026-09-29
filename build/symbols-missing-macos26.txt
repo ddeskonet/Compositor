@@ -1,0 +1,3 @@
+checked 68, missing 2
+com.compositor.project
+manifest.json
