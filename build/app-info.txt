@@ -88,15 +88,15 @@ Internal requirements count=0 size=12
 			[String] com.wonderassembly.compositor-spks
 			[String] com.wonderassembly.compositor-spki
 --prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/.
---prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
 --prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Autoupdate
 --validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Autoupdate
---validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
---prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
 --prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Installer.xpc
---validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
 --validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Installer.xpc
+--prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
+--prepared:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
+--validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/XPCServices/Downloader.xpc
+--validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/Updater.app
 --validated:/Users/runner/work/Compositor/Compositor/DerivedData/Build/Products/Release/Compositor.app/Contents/Frameworks/Sparkle.framework/Versions/Current/.
 DerivedData/Build/Products/Release/Compositor.app: valid on disk
 DerivedData/Build/Products/Release/Compositor.app: satisfies its Designated Requirement
--rw-r--r--@ 1 runner  staff  9596318 Sep 29 20:06 Compositor-1.4.3-macOS15.dmg
+-rw-r--r--@ 1 runner  staff  9596307 Sep 29 20:15 Compositor-1.4.3-macOS15.dmg

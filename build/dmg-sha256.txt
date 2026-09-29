@@ -1,1 +1,1 @@
-dfcc891dcec26bc77f98f28a9c9a2ecb1386daa69c324c03490b5e7aeb116d34  Compositor-1.4.3-macOS15.dmg
+6b9e2fc33f91f439254cfc1a046f23b9d30b4fc7115ded16ae7a42269330a346  Compositor-1.4.3-macOS15.dmg
